@@ -1,0 +1,106 @@
+############################@
+## Self modified tmux.conf ##
+##                -by aidr ##
+#############################
+
+#General
+unbind C-b
+set -g prefix C-a
+set -g prefix2 `
+#bind C-a send-prefix -2
+
+#Bind send-prefix
+bind-key ` last-window
+bind e send-prefix -2
+bind C-a send-prefix
+setw -g mode-keys vi
+set-option -g history-limit 5000
+
+#set-option -sa terminal-features ',xterm:RGB'
+#set-option -sa terminal-features ',xterm-256color:RGB'
+#set-option -sa terminal-features ',xterm-kitty:RGB'
+
+#Display
+set -g base-index 1        #start windows numbering at 1
+setw -g pane-base-index 1  #make pane numbering consistent with windows
+
+#Mouse and refresh
+set -g mouse on
+bind r source-file ~/.tmux.conf
+
+
+#Buffers and Splits
+bind b list-buffers     # list paste buffers
+bind v paste-buffer -p  # paste from the top paste buffer
+bind P choose-buffer    # choose which buffer to paste from
+bind - split-window -v
+bind _ split-window -h
+
+#Navigations
+bind -r h select-pane -L  #move left
+bind -r j select-pane -D  #move down
+bind -r k select-pane -U  #move up
+bind -r l select-pane -R  #move right
+bind > swap-pane -D       #swap current pane with the next one
+bind < swap-pane -U       #swap current pane with the previous one
+
+# Pane Resizing
+bind -r H resize-pane -L 2
+bind -r J resize-pane -D 2
+bind -r K resize-pane -U 2
+bind -r L resize-pane -R 2
+
+################
+##TPM Plugins ##
+################
+
+#set -g @plugin 'tmux-plugins/tpm'
+#set -g @plugin 'tmux-plugins/tmux-sensible'
+#set -g @plugin 'dracula/tmux'
+#set -g @plugin 'tmux-plugins/tmux-resurrect'
+
+#Dracula settings
+
+#set -g @dracula-show-powerline true
+#set -g @dracula-show-left-icon session
+#set -g @dracula-show-timezone false
+#set -g @dracula-show-fahrenheit false
+#set -g @dracula-fixed-location "kathmandu"
+#set -g @dracula-show-location false
+#set -g @dracula-military-time true
+
+# default is 1, it can accept any number and 0 disables padding.
+#set -g @dracula-left-icon-padding 0
+#set -g @dracula-plugins "weather time"
+#set -g @dracula-plugins "cpu-usage ram-usage"
+# for left
+
+#set -g @dracula-show-left-sep 
+
+# for right symbol (can set any symbol you like as seperator)
+#set -g @dracula-show-right-sep 
+
+# available colors: white, gray, dark_gray, light_purple, dark_purple,
+#cyan, green, orange, red, pink, yellow
+# set -g @dracula-[plugin-name]-colors "[background] [foreground]"
+
+#set -g @dracula-weather-colors "dark_gray white"
+#set -g @dracula-time-colors "dark_purple white"
+
+#run '~/.tmux/plugins/tpm/tpm'
+#run-shell '~/.tmux/plugins/tmux-resurrect/resurrect.tmux'
+
+################
+## geohot conf #
+################
+
+set -g status-position bottom
+set -g status-bg colour234
+set -g status-fg colour137
+set -g status-left ''
+set -g status-right '#[fg=colour233,bg=colour241,bold] %d/%m #[fg=colour233,bg=colour245,bold] %H:%M:%S '
+set -g status-right-length 50
+set -g status-left-length 20
+setw -g window-status-current-format ' #I#[fg=colour250]:#[fg=colour255]#W#[fg=colour50]#F '
+setw -g window-status-format ' #I#[fg=colour237]:#[fg=colour250]#W#[fg=colour244]#F '
+

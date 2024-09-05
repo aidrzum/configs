@@ -1,0 +1,22 @@
+
+
+sudo apt install ncdu ranger figlet cmatrix tmux terminator exa neofetch nmap x264 python3-full ffmpeg python3-venv python3-opencv python3-pyzbar libcamera-v4l2 motion libopenh264-dev bat bpytop zsh mpd ncmpcpp &&
+
+git clone https://github.com/alexanderjeurissen/ranger_devicons ~/.config/ranger/plugins/ranger_devicons &&
+echo "default_linemode devicons" >> $HOME/.config/ranger/rc.conf &&
+
+git clone https://github.com/ohmyzsh/ohmyzsh ~/.oh-my-zsh &&
+
+git clone https://github.com/zsh-users/zsh-syntax-highlighting ~/.oh-my-zsh/plugins/zsh-syntax-highlighting &&
+
+git clone https://github.com/zsh-users/zsh-autosuggestions ~/.oh-my-zsh/plugins/zsh-autosuggestions &&
+
+
+#alias UP='python3 -m http.server 8181'
+#alias md='mkdir'
+#alias rd='rmdir'
+#alias tmx='tmux new -s Z || tmux attach -t Z'
+#alias ttmx='tmux new -s Z2 || tmux attach -t Z2'
+#alias xx='exit'
+#alias l='exa --icons'
+#alias ll='exa --icons -al'
