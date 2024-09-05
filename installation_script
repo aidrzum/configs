@@ -12,6 +12,7 @@ git clone https://github.com/zsh-users/zsh-syntax-highlighting ~/.oh-my-zsh/plug
 git clone https://github.com/zsh-users/zsh-autosuggestions ~/.oh-my-zsh/plugins/zsh-autosuggestions &&
 
 
+#----------------------------------------------------------#
 #alias UP='python3 -m http.server 8181'
 #alias md='mkdir'
 #alias rd='rmdir'
@@ -20,3 +21,14 @@ git clone https://github.com/zsh-users/zsh-autosuggestions ~/.oh-my-zsh/plugins/
 #alias xx='exit'
 #alias l='exa --icons'
 #alias ll='exa --icons -al'
+
+#mkdir ~/venv0 &&
+#python3 -m venv ~/venv0 &&
+#source  ~/venv0/bin/activate &&
+#Install pip packages
+
+#https://github.com/ryanoasis/nerd-fonts/releases/download/v3.2.1/Agave.zip
+#https://github.com/ryanoasis/nerd-fonts/releases/download/v3.2.1/FantasqueSansMono.zip
+
+
+#-------------------------------------------------------------#
