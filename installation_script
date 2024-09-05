@@ -22,13 +22,19 @@ git clone https://github.com/zsh-users/zsh-autosuggestions ~/.oh-my-zsh/plugins/
 #alias l='exa --icons'
 #alias ll='exa --icons -al'
 
+#mkdir ~/monitor ~/pi ~/cam &&
 #mkdir ~/venv0 &&
 #python3 -m venv ~/venv0 &&
 #source  ~/venv0/bin/activate &&
 #Install pip packages
 
-#https://github.com/ryanoasis/nerd-fonts/releases/download/v3.2.1/Agave.zip
-#https://github.com/ryanoasis/nerd-fonts/releases/download/v3.2.1/FantasqueSansMono.zip
-
+#mkdir .fonts && cd .fonts &&
+#wget https://github.com/ryanoasis/nerd-fonts/releases/download/v3.2.1/Agave.zip
+#unzip Agave.zip &&
+#wget https://github.com/ryanoasis/nerd-fonts/releases/download/v3.2.1/FantasqueSansMono.zip
+#unzip fantasqueSansMono.zip &&
+#fc-cache -fv &&
+#Install Pivpn 
+#Rpi-connect 
 
 #-------------------------------------------------------------#
