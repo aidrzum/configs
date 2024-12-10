@@ -3,7 +3,7 @@ include colors.conf
 
 # Fonts
 #font_family								    TerminessTTF NF
-#font_family									    FantasquesansM Nerd Font
+#font_family									  FantasquesansM Nerd Font
 font_family									    Agave Nerd Font Regular
 italic_font      								auto
 bold_font        								auto
